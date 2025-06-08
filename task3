@@ -1,0 +1,42 @@
+import nltk
+import random
+import string
+from nltk.corpus import wordnet
+from nltk.chat.util import Chat, reflections
+
+
+nltk.download('punkt')
+nltk.download('wordnet')
+
+
+pairs = [
+    [
+        r"(.*)(your name|who are you)(.*)",
+        ["I am a chatbot created using NLTK!", "You can call me NLTKBot."]
+    ],
+    [
+        r"how are you(.*)",
+        ["I'm just a bunch of code, but I'm doing great!", "Feeling electric!"]
+    ],
+    [
+        r"(.*)(help|support)(.*)",
+        ["Sure, I'm here to help. Ask me anything.", "I can assist you with your queries."]
+    ],
+    [
+        r"(.*)(bye|exit|quit)",
+        ["Goodbye! Have a nice day.", "See you soon!"]
+    ],
+    [
+        r"(.*)",
+        ["Sorry, I don't understand that. Can you rephrase?", "Interesting... but I need more info."]
+    ]
+]
+
+
+def main():
+    print("Hi! I'm your NLP Chatbot. Type 'quit' or 'bye' to exit.")
+    chatbot = Chat(pairs, reflections)
+    chatbot.converse()
+
+if __name__ == "__main__":
+    main()
