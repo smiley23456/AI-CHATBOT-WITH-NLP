@@ -116,3 +116,7 @@ Integrate with GUI or web applications.
 
  Conclusion
 This project gives a beginner-friendly introduction to creating a chatbot using NLTK. It covers the basics of pattern matching, input handling, and generating responses. Although it is not AI-powered, it helps understand how early chatbots worked and lays the foundation for more complex conversational agents.
+
+##OUTPUT
+
+![Image](https://github.com/user-attachments/assets/7035103c-79c1-494b-b475-f5e7bed4bf3d)
